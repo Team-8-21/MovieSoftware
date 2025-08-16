@@ -23,7 +23,6 @@
     <Folder Include="Helpers\" />
     <Folder Include="Repositories\" />
     <Folder Include="Sounds\" />
-    <Folder Include="ViewModels\" />
   </ItemGroup>
 
 </Project>
