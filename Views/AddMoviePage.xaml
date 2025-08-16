@@ -20,13 +20,13 @@
 
         <!-- Nederste grid -->        
         <Label Content="Filmtitel" HorizontalAlignment="Center" Margin="0,45,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="36"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,115,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="360" BorderBrush="Black" FontSize="22"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,115,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Title}" VerticalAlignment="Top" Width="360" BorderBrush="Black" FontSize="22"/>
 
         <Label Content="Filmlængde" HorizontalAlignment="Center" Margin="0,175,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="36"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,245,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="360" BorderBrush="Black" FontSize="22"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,245,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding MovieLength} " VerticalAlignment="Top" Width="360" BorderBrush="Black" FontSize="22"/>
 
         <Label Content="Filmgenre" HorizontalAlignment="Center" Margin="0,305,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="36"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,375,0,0" Grid.Row="1" VerticalAlignment="Top" Width="360" FontSize="22"/>
+        <ComboBox ItemsSource="{Binding Genres}" SelectedItem="{Binding SelectedGenre, Mode=TwoWay}" HorizontalAlignment="Center" Margin="0,375,0,0" Grid.Row="1" VerticalAlignment="Top" Width="360" FontSize="22" />
 
         <Button Content="Gem" HorizontalAlignment="Center" Margin="0,478,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="36" Width="200" Height="80" Background="#FFEFE5DA"/>
 

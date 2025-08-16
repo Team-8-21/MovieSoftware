@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MovieSoftware.ViewModels;
 
 namespace MovieSoftware.Views
 {
@@ -23,6 +24,7 @@ namespace MovieSoftware.Views
         public AddUserPage()
         {
             InitializeComponent();
+            DataContext = new AddMovieViewModel();
         }
     }
 }
